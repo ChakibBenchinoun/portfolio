@@ -41,10 +41,10 @@ export function HeroSection({ className }: { className?: string }) {
             initial={{ x: "-100vw" }}
             animate={{ x: 0 }}
             transition={{ duration: 1.5, delay: 1, type: "spring" }}
-            href="#"
+            href="#contact"
             className="rounded-lg bg-lime-800 px-4 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-lime-700"
           >
-            Let's Work Together
+            Contact Me
           </motion.a>
         </div>
       </div>
