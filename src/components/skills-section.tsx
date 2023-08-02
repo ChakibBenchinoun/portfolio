@@ -11,10 +11,11 @@ export function SkillsSection() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2, delay: 0.3 }}
+        viewport={{ once: true }}
         className="w-fit mx-auto"
       >
         <h2 className="font-bold tracking-tight text-white text-4xl sm:text-5xl lg:text-6xl">
-          Skill Set
+          Skills
         </h2>
         <div className="bg-lime-500 w-1/2 h-1 mx-auto mt-2" />
       </motion.div>
@@ -25,6 +26,7 @@ export function SkillsSection() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 2, delay: 0.4 + i / 9 }}
+            viewport={{ once: true }}
             className="bg-white/5 p-8 md:p-10 rounded-lg border border-lime-800 hover:border-lime-600 group duration-300"
           >
             <div className="flex justify-center items-center group-hover:scale-125 transition duration-500">

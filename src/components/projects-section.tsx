@@ -12,6 +12,7 @@ export function ProjectsSection() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2, delay: 0.3 }}
+        viewport={{ once: true }}
         className="w-fit mx-auto"
       >
         <h2 className="font-bold tracking-tight text-white text-4xl sm:text-5xl lg:text-6xl">
@@ -24,6 +25,7 @@ export function ProjectsSection() {
           <motion.a
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 2, delay: 0.4 + i / 9 }}
             href={project.href}
             key={`${project.imageAlt}-${i}`}

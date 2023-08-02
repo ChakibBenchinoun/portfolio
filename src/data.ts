@@ -3,8 +3,9 @@ import { MailIcon } from "@/components/icons/mail";
 import { PhoneIcon } from "@/components/icons/phone";
 import { InstagramIcon } from "@/components/icons/instagram";
 import { FacebookIcon } from "@/components/icons/facebook";
+import { GithubIcon } from "./components/icons/github";
 
-export const socialMedia = [
+export const socialNetwork = [
   {
     icon: LinkedInIcon,
     label: "LinkedIn",
@@ -18,22 +19,10 @@ export const socialMedia = [
     path: "mailto:chakib022@icloud.com",
   },
   {
-    icon: PhoneIcon,
-    label: "Phone Number",
-    name: "+213 540 580 738",
-    path: "tel:+213540580738",
-  },
-  {
-    icon: InstagramIcon,
-    label: "Instagram",
-    name: "@CHAKIB022",
-    path: "https://instagram.com/chakib022?igshid=MjEwN2IyYWYwYw==",
-  },
-  {
-    icon: FacebookIcon,
-    label: "Facebook",
-    name: "Châ Kíb",
-    path: "https://www.facebook.com/chakibstar.chakib/",
+    icon: GithubIcon,
+    label: "Github",
+    name: "Chakib Benchinoun",
+    path: "https://github.com/ChakibBenchinoun",
   },
 ];
 

@@ -8,6 +8,7 @@ export function AboutSection() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2, delay: 0.3 }}
+      viewport={{ once: true }}
       className="max-w-5xl mx-auto py-20 sm:py-[245px] lg:py-60 xl:py-[265px]"
     >
       <div className="w-fit mx-auto">

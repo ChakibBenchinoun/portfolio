@@ -64,9 +64,6 @@ export function HeroSection({ className }: { className?: string }) {
           <a href="https://github.com/ChakibBenchinoun">
             <GithubIcon className="ml-6 mt-2 text-gray-200 hover:text-gray-500 transition-colors" />
           </a>
-          <a href="tel:+213540580738">
-            <PhoneIcon className="ml-2 mt-2 text-gray-200 hover:text-red-500 transition-colors" />
-          </a>
         </motion.div>
       </div>
     </div>

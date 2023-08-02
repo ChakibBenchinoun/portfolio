@@ -2,7 +2,7 @@ import { Header } from "@/components/header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Vollkorn } from "next/font/google";
-import { socialMedia } from "@/data";
+import { socialNetwork } from "@/data";
 
 const inter = Vollkorn({
   subsets: ["latin"],
@@ -35,7 +35,7 @@ export default function RootLayout({
         <footer className="bg-gray-900 border-t border-gray-500">
           <div className="mx-auto max-w-7xl px-6 py-10 md:flex md:items-center md:justify-between lg:px-8">
             <div className="flex justify-center space-x-6 md:order-2">
-              {socialMedia.map((item) => (
+              {socialNetwork.map((item) => (
                 <a
                   key={item.name}
                   href={item.path}
