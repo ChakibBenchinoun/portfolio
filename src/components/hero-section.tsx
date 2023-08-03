@@ -52,7 +52,7 @@ export function HeroSection({ className }: { className?: string }) {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 2, delay: 2.2 }}
+          transition={{ duration: 2, delay: 2.1 }}
           className="absolute right-10 xl:right-0 top-[10%]"
         >
           <a href="mailto:chakib022@icloud.com">
