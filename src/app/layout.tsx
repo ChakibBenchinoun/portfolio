@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header className="container mx-auto px-8 py-6" />
         <main>
-          <div className="relative isolate overflow-hidden bg-gradient-to-b from-gray-900/90 to-gray-900">
+          <div className="relative isolate overflow-hidden bg-gradient-to-b from-gray-900/90 via-white to-gray-900 to-70%">
             {children}
             <div
               className="hidden md:block absolute inset-y-0 xl:left-[17%] -z-10 -mr-10 w-[200%] skew-x-[-21deg] bg-gray-900 shadow-xl shadow-indigo-600/10 ring-1 ring-black md:-mr-20 lg:-mr-36"
