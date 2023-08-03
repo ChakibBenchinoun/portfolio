@@ -3,9 +3,9 @@
 import { socialNetwork } from "@/data";
 import { motion } from "framer-motion";
 
-export function ContactSection() {
+export function ContactSection({ className }: { className?: string }) {
   return (
-    <div id="contact" className="py-20 sm:py-[245px] lg:py-60 xl:py-[265px]">
+    <div id="contact" className={className}>
       <div>
         <motion.div
           initial={{ opacity: 0 }}

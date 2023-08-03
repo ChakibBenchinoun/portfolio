@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
-        <Header />
+        <Header className="container mx-auto px-8 py-6" />
         <main>
           <div className="relative isolate overflow-hidden bg-gradient-to-b from-gray-900/90">
             {children}
@@ -33,24 +33,10 @@ export default function RootLayout({
           </div>
         </main>
         <footer className="bg-gray-900 border-t border-gray-500">
-          <div className="mx-auto max-w-7xl px-6 py-10 md:flex md:items-center md:justify-between lg:px-8">
-            <div className="flex justify-center space-x-6 md:order-2">
-              {socialNetwork.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.path}
-                  className="text-gray-400 hover:text-gray-500"
-                >
-                  <span className="sr-only">{item.label}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
-                </a>
-              ))}
-            </div>
-            <div className="mt-8 md:order-1 md:mt-0">
-              <p className="text-center text-sm leading-5 text-gray-500">
-                &copy; 2023 Chakib Benchinoun,
-              </p>
-            </div>
+          <div className="container mx-auto px-8 py-10 w-full flex items-center">
+            <p className="text-sm leading-5 text-gray-500">
+              &copy; 2023 Chakib Benchinoun,
+            </p>
           </div>
         </footer>
       </body>

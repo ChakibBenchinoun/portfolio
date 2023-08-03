@@ -44,30 +44,35 @@ export const projects = [
     href: "https://boutiqueennasr.com/",
     imageSrc: "/images/projects/boutique-ennasr.png",
     imageAlt: "boutiqueennasr",
+    description:'This is a business website for a tailor-made shop in Algeria to showcase their work and walk the customers through the process of ordering a dress.'
   },
   {
     name: "The Idea Road",
     href: "https://www.theidearoad.com/",
     imageSrc: "/images/projects/the-idea-road.png",
     imageAlt: "theidearoad",
+    description:"This is a business website for a performing arts director/journalist to showcase his shows. This website is meant to convey the artist's vision but also it had to be simple and accessible for his customers."
   },
   {
     name: "Vaughan Psychology",
     href: "https://vaughanpsychology.com/",
     imageSrc: "/images/projects/vaughanpsychology.png",
     imageAlt: "vaughanpsychology",
+    description:'This is a business website for a tailor-made shop in Algeria to showcase their work and walk the customers through the process of ordering a dress.'
   },
   {
     name: "Ardeen Group",
     href: "https://ardeen.group/",
     imageSrc: "/images/projects/ardeen-group.png",
     imageAlt: "ardeen.group",
+    description:'This is a business website for a property investment group in Warrington to display their available services.'
   },
 
   {
     name: "Original Cuts And Coffee",
     href: "https://originalcutsandcoffee.com/",
     imageSrc: "/images/projects/original-cuts-and-coffee.png",
-    imageAlt: "originalcutsandcoffee",
+    imageAlt: 'originalcutsandcoffee',
+    description:"This is a landing page for a barber shop/coffee shop in Warrington. Its main purpose is to welcome the customer, convey information about the whereabouts of the shop and direct them to the app where they can book an appointment.",
   },
 ];

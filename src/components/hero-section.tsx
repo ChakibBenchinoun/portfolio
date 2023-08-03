@@ -17,7 +17,7 @@ export function HeroSection({ className }: { className?: string }) {
           transition={{ duration: 1.5, delay: 0, type: "spring" }}
           className="sm:text-lg lg:text-xl font-medium text-lime-600"
         >
-          Hey there!
+          Hey there ! <span className="ml-2 rotate-90 inline-block">: )</span>
         </motion.h3>
         <motion.h1
           initial={{ x: "-100vw" }}
@@ -34,7 +34,7 @@ export function HeroSection({ className }: { className?: string }) {
           transition={{ duration: 1.5, delay: 0.7, type: "spring" }}
           className="mt-8 text-sm sm:text-base lg:text-lg sm:leading-8 text-gray-400 max-w-xl pb-5"
         >
-          Hi, My Name Is Chakib And Welcom To My Portfolio
+          My Name Is Chakib And Welcom To My Portfolio
         </motion.p>
         <div className="mt-10 flex items-center gap-x-6">
           <motion.a
@@ -52,7 +52,7 @@ export function HeroSection({ className }: { className?: string }) {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 2, delay: 3 }}
+          transition={{ duration: 2, delay: 2.2 }}
           className="absolute right-10 xl:right-0 top-[10%]"
         >
           <a href="mailto:chakib022@icloud.com">

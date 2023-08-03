@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 import { projects } from "@/data";
 
-export function ProjectsSection() {
+export function ProjectsSection({ className }: { className?: string }) {
   return (
-    <div id="projects" className="py-20 sm:py-[245px] lg:py-60 xl:py-[265px]">
+    <div id="projects" className={className}>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -20,7 +20,7 @@ export function ProjectsSection() {
         </h2>
         <div className="bg-lime-500 w-1/2 h-1 mx-auto mt-2" />
       </motion.div>
-      <div className="mt-16 gap-16 grid lg:grid-cols-6 grid-cols-4 lg:grid-rows-2">
+      <div className="mt-16 gap-x-3 md:gap-x-6 gap-y-5 md:gap-y-10 grid grid-cols-4 xl:grid-cols-6">
         {projects.map((project, i) => (
           <motion.a
             initial={{ opacity: 0 }}
@@ -30,25 +30,30 @@ export function ProjectsSection() {
             href={project.href}
             key={`${project.imageAlt}-${i}`}
             className={clsx("group relative col-span-2", {
-              "lg:col-start-2": i + 1 === 4,
-              "lg:col-start-4 col-start-2": i + 1 === 5,
+              "xl:col-start-2": i + 1 === 4,
+              "col-start-2 xl:col-start-auto": i + 1 === projects.length,
             })}
             target="_blank"
           >
-            <div className="relative aspect-video w-full overflow-hidden rounded-lg lg:aspect-none border border-lime-800">
+            <div className="relative aspect-video w-full overflow-hidden lg:aspect-none border border-lime-800">
               <Image
                 width={500}
                 height={500}
                 src={project.imageSrc}
                 alt={project.imageAlt}
-                className="h-full w-full object-cover object-center lg:h-full lg:w-full rounded-lg p-2"
+                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
               />
-              <div className="flex absolute w-full h-full top-0 items-end bg-black/90 rounded-md -translate-x-[100%] group-hover:translate-x-0 transition duration-700">
-                <div className="mb-5 ml-5">
-                  <h1 className="font-medium text-lg text-gray-400">
-                    {project.name}
-                  </h1>
-                  <div className="bg-lime-500 h-0.5 scale-x-0 group-hover:scale-x-100 transition-all origin-left delay-500 duration-700" />
+              <div className="flex absolute w-full h-full top-0 bg-black/90 -translate-x-[100%] group-hover:translate-x-0 transition duration-700">
+                <div className="my-4 mx-5">
+                  <div className="w-fit">
+                    <h1 className="font-medium text-xs sm:text-sm md:text-lg text-gray-400">
+                      {project.name}
+                    </h1>
+                    <div className="bg-lime-500 h-0.5 scale-x-0 group-hover:scale-x-100 transition-all origin-left delay-500 duration-700" />
+                  </div>
+                  <p className="mt-3 text-xs md:text-sm lg:text-base text-gray-400 max-w-xs tracking-wide">
+                    {project.description}
+                  </p>
                 </div>
               </div>
             </div>

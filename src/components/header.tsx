@@ -12,7 +12,7 @@ const navigation = [
   { label: "Projects", path: "#projects" },
 ];
 
-export function Header() {
+export function Header({ className }: { className?: string }) {
   const [navbar, setNavbar] = React.useState(false);
 
   const changeBackground = () => {
@@ -28,16 +28,14 @@ export function Header() {
   });
 
   return (
-    <header
+    <nav
       className={clsx(
         "fixed z-50 inset-x-0 border-b border-gray-600 transition",
         navbar ? "bg-gray-900" : "bg-transparent"
       )}
+      aria-label="Global"
     >
-      <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
-        aria-label="Global"
-      >
+      <div className={clsx("flex items-center justify-between", className)}>
         <a href="/">
           <span className="sr-only">Chakib Benchinoun portfolio</span>
           <h1 className="text-3xl font-medium tracking-tight text-gray-100">
@@ -110,7 +108,7 @@ export function Header() {
             Contact
           </a>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 }
