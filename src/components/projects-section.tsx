@@ -20,7 +20,7 @@ export function ProjectsSection({ className }: { className?: string }) {
         </h2>
         <div className="bg-lime-500 w-1/2 h-1 mx-auto mt-2" />
       </motion.div>
-      <div className="mt-16 gap-x-3 md:gap-x-6 gap-y-5 md:gap-y-10 grid grid-cols-4 xl:grid-cols-6">
+      <div className="mt-16 gap-x-3 md:gap-x-6 gap-y-5 md:gap-y-10 grid sm:grid-cols-4 xl:grid-cols-6">
         {projects.map((project, i) => (
           <motion.a
             initial={{ opacity: 0 }}
@@ -31,7 +31,7 @@ export function ProjectsSection({ className }: { className?: string }) {
             key={`${project.imageAlt}-${i}`}
             className={clsx("group relative col-span-2", {
               "xl:col-start-2": i + 1 === 4,
-              "col-start-2 xl:col-start-auto": i + 1 === projects.length,
+              "sm:col-start-2 xl:col-start-auto": i + 1 === projects.length,
             })}
             target="_blank"
           >

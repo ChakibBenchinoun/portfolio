@@ -39,9 +39,9 @@ export function SkillsSection({ className }: { className?: string }) {
                 height={500}
                 src={item.image}
                 alt={item.label}
-                className="w-14 h-14 object-contain"
+                className="w-8 h-8 sm:w-14 sm:h-14 object-contain"
               />
-              <span className="ml-5 text-gray-300 sm:text-lg whitespace-nowrap lg:text-xl">
+              <span className="ml-2 sm:ml-5 text-gray-300 text-sm sm:text-lg whitespace-nowrap lg:text-xl">
                 {item.label}
               </span>
             </div>

@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       {/* Hero Section */}
       <HeroSection className="container mx-auto px-8 py-20 sm:py-[245px] lg:py-60 xl:py-[265px] mt-28" />
-      <div className="bg-gray-900 mb-20 relative">
+      <div className="bg-gray-900 relative mb-20">
         <ScrollArrow />
         {/* About */}
         <AboutSection className="container mx-auto px-8 py-32 sm:py-40 md:py-44 lg:py-48 xl:py-52 scroll-mt-20" />
@@ -19,7 +19,7 @@ export default function Home() {
         {/* Project Section */}
         <ProjectsSection className="container mx-auto px-8 py-32 sm:py-40 md:py-44 lg:py-48 xl:py-52 -scroll-mt-10" />
         {/* Let's Work Together */}
-        <ContactSection className="container mx-auto px-8 pb-32 sm:py-40 md:py-44 lg:py-48 xl:py-52" />
+        <ContactSection className="container mx-auto px-8 pb-32 sm:py-40 md:py-44 lg:py-48 xl:py-52 p-" />
       </div>
     </div>
   );
