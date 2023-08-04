@@ -11,10 +11,8 @@ const inter = Vollkorn({
 
 export const metadata: Metadata = {
   title: "Chakib Benchinoun",
-  description: "Chakib Benchinoun Portfolio",
-  openGraph: {
-    images: "/og-image.png",
-  },
+  description:
+    "Hey there, Welcome to my Portfolio ! You have an idea in mind ? You have a project in mind ? You need a website ? Contact me and we will create something Beautiful Together !",
 };
 
 export default function RootLayout({
