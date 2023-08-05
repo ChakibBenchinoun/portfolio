@@ -37,11 +37,10 @@ export function ProjectsSection({ className }: { className?: string }) {
           >
             <div className="relative aspect-video w-full overflow-hidden lg:aspect-none border border-lime-800">
               <Image
-                width={500}
-                height={500}
+                fill
                 src={project.imageSrc}
                 alt={project.imageAlt}
-                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                className="h-full w-full object-cover object-center"
               />
               <div className="flex absolute w-full h-full top-0 bg-black/90 -translate-x-[100%] group-hover:translate-x-0 transition duration-700">
                 <div className="my-4 mx-5">

@@ -12,7 +12,7 @@ const inter = Vollkorn({
 export const metadata: Metadata = {
   title: "Chakib Benchinoun",
   description:
-    "Hey there, Welcome to my Portfolio ! You have an idea in mind ? You have a project in mind ? You need a website ? Contact me and we will create something Beautiful Together !",
+    "Hey there, You need a website ? Contact me and we will create something Beautiful Together !",
 };
 
 export default function RootLayout({
@@ -35,7 +35,7 @@ export default function RootLayout({
         </main>
         <footer className="bg-gray-900 border-t border-gray-500">
           <div className="container mx-auto px-8 py-10 w-full flex items-center">
-            <p className="text-sm leading-5 text-gray-500">
+            <p className="text-sm leading-5 text-gray-400/95">
               &copy; 2023 Chakib Benchinoun,
             </p>
           </div>

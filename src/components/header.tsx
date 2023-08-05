@@ -4,6 +4,7 @@ import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import React from "react";
+import { LogoSite } from "./icons/logo-site";
 
 const navigation = [
   { label: "Home", path: "/" },
@@ -38,9 +39,10 @@ export function Header({ className }: { className?: string }) {
       <div className={clsx("flex items-center justify-between", className)}>
         <a href="/">
           <span className="sr-only">Chakib Benchinoun portfolio</span>
-          <h1 className="text-3xl font-medium tracking-tight text-gray-100">
+          {/* <h1 className="text-3xl font-medium tracking-tight text-gray-100">
             C<span className="text-lime-500">.</span>BEN
-          </h1>
+          </h1> */}
+          <LogoSite className="w-24 h-12" />
         </a>
 
         <div className="relative inline-block lg:hidden text-left">

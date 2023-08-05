@@ -34,13 +34,18 @@ export function SkillsSection({ className }: { className?: string }) {
             )}
           >
             <div className="flex justify-center items-center group-hover:scale-125 transition duration-500">
-              <Image
-                width={500}
-                height={500}
-                src={item.image}
-                alt={item.label}
-                className="w-8 h-8 sm:w-14 sm:h-14 object-contain"
-              />
+              <div className="relative w-8 h-8 sm:w-14 sm:h-14">
+                <Image
+                  fill
+                  src={item.image}
+                  alt={item.label}
+                  className={clsx(
+                    item.label === "JavaScript"
+                      ? "object-cover"
+                      : "object-contain"
+                  )}
+                />
+              </div>
               <span className="ml-2 sm:ml-5 text-gray-300 text-sm sm:text-lg whitespace-nowrap lg:text-xl">
                 {item.label}
               </span>

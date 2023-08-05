@@ -11,14 +11,14 @@ export function HeroSection({ className }: { className?: string }) {
   return (
     <div className={clsx("lg:grid lg:grid-cols-3 lg:gap-x-8", className)}>
       <div className="my-5 col-span-2">
-        <motion.h3
+        <motion.p
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
           transition={{ duration: 1.5, delay: 0, type: "spring" }}
           className="sm:text-lg lg:text-xl font-medium text-lime-600"
         >
           Hey there ! <span className="ml-2 rotate-90 inline-block">: )</span>
-        </motion.h3>
+        </motion.p>
         <motion.h1
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
@@ -55,13 +55,16 @@ export function HeroSection({ className }: { className?: string }) {
           transition={{ duration: 2, delay: 2.1 }}
           className="absolute right-10 xl:right-0 top-[10%]"
         >
-          <a href="mailto:chakib022@icloud.com">
+          <a href="mailto:chakib022@icloud.com" aria-label="My Email">
             <MailIcon className="ml-14 mt-2 text-gray-200 hover:text-lime-500 transition-colors" />
           </a>
-          <a href="https://www.linkedin.com/in/chakib-benchinoun-56b367275/">
+          <a
+            href="https://www.linkedin.com/in/chakib-benchinoun-56b367275/"
+            aria-label="My Linkedin"
+          >
             <LinkedInIcon className="ml-10 mt-2 text-gray-200 hover:text-blue-500 transition-colors" />
           </a>
-          <a href="https://github.com/ChakibBenchinoun">
+          <a href="https://github.com/ChakibBenchinoun" aria-label="My Github">
             <GithubIcon className="ml-6 mt-2 text-gray-200 hover:text-gray-500 transition-colors" />
           </a>
         </motion.div>
