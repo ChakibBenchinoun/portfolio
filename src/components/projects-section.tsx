@@ -30,8 +30,7 @@ export function ProjectsSection({ className }: { className?: string }) {
             href={project.href}
             key={`${project.imageAlt}-${i}`}
             className={clsx("group relative col-span-2", {
-              "xl:col-start-2": i + 1 === 4,
-              "sm:col-start-2 xl:col-start-auto": i + 1 === projects.length,
+              "xl:col-start-3": i + 1 === 4,
             })}
             target="_blank"
           >

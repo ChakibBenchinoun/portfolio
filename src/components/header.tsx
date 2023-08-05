@@ -17,7 +17,7 @@ export function Header({ className }: { className?: string }) {
   const [navbar, setNavbar] = React.useState(false);
 
   const changeBackground = () => {
-    if (window.scrollY >= 209) {
+    if (window.scrollY >= 140) {
       setNavbar(true);
     } else {
       setNavbar(false);
