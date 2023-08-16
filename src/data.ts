@@ -4,6 +4,7 @@ import { PhoneIcon } from "@/components/icons/phone";
 import { InstagramIcon } from "@/components/icons/instagram";
 import { FacebookIcon } from "@/components/icons/facebook";
 import { GithubIcon } from "./components/icons/github";
+import { ContraIcon } from "./components/icons/diamond";
 
 export const socialNetwork = [
   {
@@ -11,6 +12,12 @@ export const socialNetwork = [
     label: "LinkedIn",
     name: "Chakib Benchinoun",
     path: "https://www.linkedin.com/in/chakib-benchinoun-56b367275/",
+  },
+  {
+    icon: ContraIcon,
+    label: "Contra",
+    name: "Chakib Benchinoun",
+    path: "https://contra.com/chakibbenchinoun",
   },
   {
     icon: MailIcon,

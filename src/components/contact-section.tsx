@@ -30,7 +30,7 @@ export function ContactSection({ className }: { className?: string }) {
           Got a project in mind? Contact Me! Let's make something awesome
           together.
         </motion.p>
-        <div className="flex justify-between text-base leading-7 mt-20 max-w-md sm:max-w-xl mx-auto">
+        <div className="grid sm:grid-cols-3 justify-center  gap-4 text-base leading-7 mt-20 max-w-md sm:max-w-xl mx-auto">
           {socialNetwork.map((item, i) =>
             item.label === "Github" ? null : (
               <motion.a
