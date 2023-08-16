@@ -34,7 +34,7 @@ export function HeroSection({ className }: { className?: string }) {
           transition={{ duration: 1.5, delay: 0.7, type: "spring" }}
           className="mt-8 text-sm sm:text-base lg:text-lg sm:leading-8 text-gray-400 max-w-xl pb-5"
         >
-          My Name Is Chakib And Welcom To My Portfolio
+          Hello, I'm Chakib. Feel free to browse through my portfolio.
         </motion.p>
         <div className="mt-10 flex items-center gap-x-6">
           <motion.a

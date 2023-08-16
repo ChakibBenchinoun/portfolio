@@ -20,17 +20,17 @@ export function AboutSection({ className }: { className?: string }) {
           <div className="bg-lime-500 w-1/2 h-1 mx-auto mt-2" />
         </div>
         <p className="text-sm sm:text-base lg:text-lg sm:leading-8 text-gray-300 text-center mt-16">
-          Hi, My name is Chakib Benchnoun and I'm currently based in Oran,
-          Algeria. I'm freelancer specialize in web applications with two years
-          of experience and a huge motivation to create something user-friendly
-          and beautiful, I have worked on several projects which i'm proud to
-          show you some of them{" "}
+          Hey, I'm Chakib Benchnoun, currently based in Oran, Algeria. I bring
+          two years of freelancing experience, specializing in web applications.
+          I'm dedicated to creating both user-friendly and visually appealing
+          solutions.{" "}
           <a
             href="#projects"
             className="hover:text-lime-500 underline underline-offset-4 transition"
           >
             below
           </a>
+          , you'll find a glimpse of some projects I'm proud to share.
         </p>
         <div className="mx-auto w-fit mt-20">
           <a
