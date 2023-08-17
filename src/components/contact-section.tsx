@@ -1,6 +1,7 @@
 "use client";
 
 import { socialNetwork } from "@/data";
+import clsx from "clsx";
 import { motion } from "framer-motion";
 
 export function ContactSection({ className }: { className?: string }) {
@@ -30,7 +31,7 @@ export function ContactSection({ className }: { className?: string }) {
           Got a project in mind? Contact Me! Let's make something awesome
           together.
         </motion.p>
-        <div className="grid sm:grid-cols-3 justify-center  gap-4 text-base leading-7 mt-20 max-w-md sm:max-w-xl mx-auto">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 justify-center  gap-10 text-base leading-7 mt-20 max-w-md sm:max-w-xl mx-auto">
           {socialNetwork.map((item, i) =>
             item.label === "Github" ? null : (
               <motion.a
@@ -40,11 +41,14 @@ export function ContactSection({ className }: { className?: string }) {
                 viewport={{ once: true }}
                 transition={{ duration: 2, delay: 0.5 + i / 9 }}
                 href={item.path}
+                className={clsx(
+                  i + 1 === socialNetwork.length - 1 ? "sm:col-start-2" : ""
+                )}
               >
-                <h3 className="border-l-4 border-lime-500 pl-6 font-semibold text-gray-200 flex items-center">
+                <h3 className="border-l-4 border-lime-500 pl-3 font-semibold text-gray-200 flex items-center">
                   <item.icon /> <span className="ml-2">{item.label}</span>
                 </h3>
-                <address className="border-l-4 border-gray-400 pl-6 pt-2 not-italic text-gray-500">
+                <address className="border-l-4 border-gray-400 pl-4 pt-2 not-italic text-gray-500">
                   <p>{item.name}</p>
                 </address>
               </motion.a>

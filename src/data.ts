@@ -4,7 +4,8 @@ import { PhoneIcon } from "@/components/icons/phone";
 import { InstagramIcon } from "@/components/icons/instagram";
 import { FacebookIcon } from "@/components/icons/facebook";
 import { GithubIcon } from "./components/icons/github";
-import { ContraIcon } from "./components/icons/diamond";
+import { ContraIcon } from "./components/icons/contra";
+import { FiverrIcon } from "./components/icons/fiverr";
 
 export const socialNetwork = [
   {
@@ -14,16 +15,22 @@ export const socialNetwork = [
     path: "https://www.linkedin.com/in/chakib-benchinoun-56b367275/",
   },
   {
+    icon: MailIcon,
+    label: "Mail",
+    name: "Chakib022@icloud.com",
+    path: "mailto:chakib022@icloud.com",
+  },
+  {
     icon: ContraIcon,
     label: "Contra",
     name: "Chakib Benchinoun",
     path: "https://contra.com/chakibbenchinoun",
   },
   {
-    icon: MailIcon,
-    label: "Mail",
-    name: "Chakib022@icloud.com",
-    path: "mailto:chakib022@icloud.com",
+    icon: FiverrIcon,
+    label: "Fiverr Gig",
+    name: "Chakib Benchinoun",
+    path: "  https://www.fiverr.com/s/jXKwDV",
   },
   {
     icon: GithubIcon,
