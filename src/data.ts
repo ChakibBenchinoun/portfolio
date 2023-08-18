@@ -21,18 +21,6 @@ export const socialNetwork = [
     path: "mailto:chakib022@icloud.com",
   },
   {
-    icon: ContraIcon,
-    label: "Contra",
-    name: "Chakib Benchinoun",
-    path: "https://contra.com/chakibbenchinoun",
-  },
-  {
-    icon: FiverrIcon,
-    label: "Fiverr Gig",
-    name: "Chakib Benchinoun",
-    path: "  https://www.fiverr.com/s/jXKwDV",
-  },
-  {
     icon: GithubIcon,
     label: "Github",
     name: "Chakib Benchinoun",
