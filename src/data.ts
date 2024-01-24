@@ -70,5 +70,19 @@ export const projects = [
     imageAlt: "vaughanpsychology",
     description:'This is a single page website for a Chartered Counselling Psychologist to display the available services and walk the clients through the taken approach.'
   },
+  {
+    name: "Gym Website Template",
+    href: "https://fit-park.vercel.app/",
+    imageSrc: "/images/projects/gym-template.png",
+    imageAlt: "gym-website-template",
+    description:"An interactive multi-page website for a Gym, showcasing the diverse range of classes, services, and transparent pricing options for memberships. Create an engaging platform that seamlessly communicates the fitness offerings and encourages user exploration."
+  },
+  {
+    name: "Men's Clothing Shop Website Template",
+    href: "https://gentlemens-wear.vercel.app/",
+    imageSrc: "/images/projects/mens-clothing-shop-template.png",
+    imageAlt: "mens-clothing-shop-template",
+    description:"A Men's Clothing Shop Website with a sleek design featuring high-quality images and intuitive navigation. Showcaseing products, highlighting personalized services, and share the shop's unique story, ensuring a visually appealing and engaging online experience."
+  },
 
 ];

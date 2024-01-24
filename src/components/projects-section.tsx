@@ -29,9 +29,7 @@ export function ProjectsSection({ className }: { className?: string }) {
             transition={{ duration: 2, delay: 0.4 + i / 9 }}
             href={project.href}
             key={`${project.imageAlt}-${i}`}
-            className={clsx("group relative col-span-2", {
-              "xl:col-start-3": i + 1 === 4,
-            })}
+            className={clsx("group relative col-span-2", {})}
             target="_blank"
           >
             <div className="relative aspect-video w-full overflow-hidden lg:aspect-none border border-lime-800">
