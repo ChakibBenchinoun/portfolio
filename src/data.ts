@@ -84,5 +84,11 @@ export const projects = [
     imageAlt: "mens-clothing-shop-template",
     description:"A Men's Clothing Shop Website with a sleek design featuring high-quality images and intuitive navigation. Showcaseing products, highlighting personalized services, and share the shop's unique story, ensuring a visually appealing and engaging online experience."
   },
-
+  {
+    name: "Car Rental Website Template",
+    href: "https://luxury-force.vercel.app/",
+    imageSrc: "/images/projects/luxury-force.jpg",
+    imageAlt: "car-rantal-template",
+    description:""
+  },
 ];

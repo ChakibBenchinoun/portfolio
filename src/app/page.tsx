@@ -7,7 +7,7 @@ import { ScrollArrow } from "@/components/scroll-arrow";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       {/* Hero Section */}
       <HeroSection className="container mx-auto px-8 py-20 sm:py-[245px] lg:py-60 xl:py-[265px] mt-28" />
       <div className="bg-gray-900 relative mb-20">
