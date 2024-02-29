@@ -29,7 +29,13 @@ export function ProjectsSection({ className }: { className?: string }) {
             transition={{ duration: 2, delay: 0.4 + i / 9 }}
             href={project.href}
             key={`${project.imageAlt}-${i}`}
-            className={clsx("group relative col-span-2", {})}
+            className={clsx(
+              "group relative col-span-2",
+              !Number.isInteger(projects.length / 3) &&
+                i === projects.length - 1
+                ? "sm:col-start-2 xl:col-start-3"
+                : ""
+            )}
             target="_blank"
           >
             <div className="relative aspect-video w-full overflow-hidden lg:aspect-none border border-lime-800">
