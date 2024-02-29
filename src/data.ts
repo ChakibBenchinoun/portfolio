@@ -57,13 +57,6 @@ export const projects = [
     description:"This is a business website for a performing arts director/journalist to showcase his shows. This website is meant to convey the artist's vision but also it had to be simple and accessible for his customers."
   },
   {
-    name: "boutique Ennasr",
-    href: "https://boutiqueennasr.com/",
-    imageSrc: "/images/projects/boutique-ennasr.png",
-    imageAlt: "boutiqueennasr",
-    description:'This is a business website for a tailor-made shop in Algeria to showcase their work and walk the customers through the process of ordering a dress.'
-  },
-  {
     name: "Vaughan Psychology",
     href: "https://vaughanpsychology.com/",
     imageSrc: "/images/projects/vaughanpsychology.png",
