@@ -42,13 +42,19 @@ export const skillSet = [
 
 export const projects = [
   {
+    name: "Boutique Ennasr",
+    href: "https://boutiqueennasr.com/",
+    imageSrc: "/images/projects/boutique-ennasr.png",
+    imageAlt: "boutiqueennasr",
+    description:'Boutique Ennasr is a luxurious platform showcasing custom kaftans and dresses, blending tradition with modern style. Built with Sanity CMS, localization, React, Next.js, and TailwindCSS, it offers a seamless, personalized fashion experience.'
+  },
+  {
     name: "Ardeen Group",
     href: "https://ardeen.group/",
     imageSrc: "/images/projects/ardeen-group.png",
     imageAlt: "ardeen.group",
     description:'This is a business website for a property investment group in Warrington to display their available services.'
   },
-
   {
     name: "The Idea Road",
     href: "https://www.theidearoad.com/",
@@ -71,7 +77,7 @@ export const projects = [
     description:"An interactive multi-page website for a Gym, showcasing the diverse range of classes, services, and transparent pricing options for memberships. Create an engaging platform that seamlessly communicates the fitness offerings and encourages user exploration."
   },
   {
-    name: "Men's Clothing Shop Website Template",
+    name: "Clothing Shop Website Template",
     href: "https://gentlemens-wear.vercel.app/",
     imageSrc: "/images/projects/mens-clothing-shop-template.png",
     imageAlt: "mens-clothing-shop-template",
@@ -82,6 +88,6 @@ export const projects = [
     href: "https://luxury-force.vercel.app/",
     imageSrc: "/images/projects/luxury-force.jpg",
     imageAlt: "car-rantal-template",
-    description:""
+    description:"Luxury Force is a stylish car rental template showcasing premium vehicles for a seamless booking experience. Crafted with TailwindCSS and Next.js, it delivers a sleek, user-friendly interface for luxury car rentals."
   },
 ];

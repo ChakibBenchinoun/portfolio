@@ -36,7 +36,8 @@ export function ProjectsSection({ className }: { className?: string }) {
                 ? "sm:col-start-2 xl:col-start-3"
                 : ""
             )}
-            target="_blank"
+            target="_blank" 
+            rel="noreferrer"
           >
             <div className="relative aspect-video w-full overflow-hidden lg:aspect-none border border-lime-800">
               <Image
