@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<div className="overflow-hidden">
 			{/* Hero Section */}
-			<HeroSection className="container mx-auto px-8 py-20 sm:py-[245px] lg:py-60 xl:py-[265px] mt-28" />
+			<HeroSection className="container mx-auto min-h-[100svh] px-8 pt-32 pb-16 sm:pt-36 sm:pb-20 lg:pt-40 lg:pb-24 xl:pt-44 xl:pb-28" />
 			<div className="bg-gray-900 relative mb-20">
 				<ScrollArrow />
 				{/* About */}

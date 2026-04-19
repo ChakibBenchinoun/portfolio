@@ -2,7 +2,6 @@ import { Header } from "@/components/header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Vollkorn } from "next/font/google";
-import { socialNetwork } from "@/data";
 
 const inter = Vollkorn({
   subsets: ["latin"],
@@ -10,9 +9,9 @@ const inter = Vollkorn({
 });
 
 export const metadata: Metadata = {
-  title: "Chakib Benchinoun",
+  title: "Chakib Benchinoun | Frontend Engineer | React • Next.js • TypeScript",
   description:
-    "Hey there, You need a website ? Contact me and we will create something Beautiful Together !",
+    "Frontend Engineer with 4+ years building scalable React/Next.js admin platforms and consumer apps. Specializing in Monorepo architecture, type-safe APIs, and performance optimization. Based in Oran, Algeria.",
 };
 
 export default function RootLayout({
