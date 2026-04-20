@@ -27,7 +27,7 @@ export function AboutSection({ className }: { className?: string }) {
           >
             Below
           </a>
-          {" "}you'll find recent projects I've shipped.
+          {" "}you&apos;ll find recent projects I&apos;ve shipped.
         </p>
         <div className="mx-auto w-fit mt-20">
           <a

@@ -28,7 +28,7 @@ export function ContactSection({ className }: { className?: string }) {
           viewport={{ once: true }}
           className="text-xl tracking-wider leading-loose sm:text-3xl text-gray-100 text-center max-w-2xl mx-auto"
         >
-          Got a project in mind? Contact Me! Let's make something awesome
+          Got a project in mind? Contact Me! Let&apos;s make something awesome
           together.
         </motion.p>
         <div className="grid sm:grid-cols-2 justify-center sm:justify-items-center gap-10 text-base leading-7 mt-20 max-w-md sm:max-w-xl mx-auto">

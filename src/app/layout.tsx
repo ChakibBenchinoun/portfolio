@@ -9,6 +9,9 @@ const inter = Vollkorn({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://chakibbenchinoun.vercel.app"
+  ),
   title: "Chakib Benchinoun | Frontend Engineer | React • Next.js • TypeScript",
   description:
     "Frontend Engineer with 4+ years building scalable React/Next.js admin platforms and consumer apps. Specializing in Monorepo architecture, type-safe APIs, and performance optimization. Based in Oran, Algeria.",
