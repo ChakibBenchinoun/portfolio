@@ -29,8 +29,8 @@ export function SkillsSection({ className }: { className?: string }) {
             transition={{ duration: 2, delay: 0.4 + i / 9 }}
             viewport={{ once: true }}
             className={clsx(
-              "bg-white/5 p-5 md:p-8 lg:p-10 rounded-lg border border-lime-800 hover:border-lime-600 group duration-300 col-span-2 lg:col-span-1",
-              { "col-start-2": i + 1 === skillSet.length }
+              "bg-white/5 p-5 md:p-8 lg:p-10 rounded-lg border grid-cols-subgrid  border-lime-800 hover:border-lime-600 group duration-300 col-span-2 lg:col-span-1",
+              { "lg:col-start-2": i + 1 === skillSet.length },
             )}
           >
             <div className="flex justify-center items-center group-hover:scale-125 transition duration-500">
@@ -39,11 +39,7 @@ export function SkillsSection({ className }: { className?: string }) {
                   fill
                   src={item.image}
                   alt={item.label}
-                  className={clsx(
-                    item.label === "JavaScript"
-                      ? "object-cover"
-                      : "object-contain"
-                  )}
+                  className={clsx(item.label === "JavaScript" ? "object-cover" : "object-contain")}
                 />
               </div>
               <span className="ml-2 sm:ml-5 text-gray-300 text-sm sm:text-lg whitespace-nowrap lg:text-xl">

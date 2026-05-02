@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.codeActionsOnSave": {
+    "source.format.oxc": "always"
+  },
+  "oxc.enable.oxfmt": true,
+  "oxc.path.oxfmt": "node_modules/.bin/oxfmt"
+}
